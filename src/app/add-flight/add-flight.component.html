@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+        <h1>Add Flight</h1>
+    </div>
+    <div class="card-body">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Flight Name</span>
+            <input type="text" class="form-control" aria-label="flightname" (change)="add($event)">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Source</span>
+            <input type="text" class="form-control" aria-label="source" (change)="sourcelocation($event)">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Destination</span>
+            <input type="text" class="form-control" aria-label="destination" (change)="destinationlocation($event)">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Date</span>
+            <input type="date" class="form-control" placeholder="Date" aria-label="date" (change)="date($event)">
+            <span class="input-group-text">Time</span>
+            <input type="time" class="form-control" placeholder="Time" aria-label="time" (change)="time($event)">
+            <span class="input-group-text">Price</span>
+            <input type="text" class="form-control" placeholder="$" aria-label="price" (change)="price($event)">
+            <span class="input-group-text">Seat</span>
+            <input type="text" class="form-control" aria-label="seat" (change)="seat($event)">
+        </div>
+        <button class="btn btn-primary" (click)="submit()">Add Flight</button>
+    </div>
+  </div>

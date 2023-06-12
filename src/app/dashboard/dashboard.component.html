@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="card">
+    <div class="card-header">
+        <h1>Search a Flight</h1>
+    </div>
+    <div class="card-body">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Source</span>
+            <select class="form-select" id="inputGroupSelect01" name="fromlocation">
+              <option selected>Choose...</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Trichy">Trichy</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Destination</span>
+            <select class="form-select" id="inputGroupSelect02" name="tolocation">
+              <option selected>Choose...</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Trichy">Trichy</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Date</span>
+            <input type="date" class="form-control" placeholder="Date" aria-label="Date">
+            <span class="input-group-text">Time</span>
+            <input type="time" class="form-control" placeholder="Time" aria-label="Time">
+          </div>
+        <a href="#" routerLink="/booking" class="btn btn-primary">Search Flight</a>
+    </div>
+  </div>

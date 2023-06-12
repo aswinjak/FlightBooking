@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-header">
+      <h1>All Bookings</h1>
+    </div>
+    <div class="card-body">
+      <table class="table" >
+        <thead>
+          <th>Name</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Price</th>
+          <th>Seat</th>
+          <th>Status</th>
+        </thead>
+        <tbody *ngFor="let i of flightdetails">
+          <tr class="table-active">
+            <td>{{i.flightname}}</td>
+            <td>{{i.source}}</td>
+            <td>{{i.destination}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.time}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.seat}}</td>
+            <td>{{i.isbooked}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

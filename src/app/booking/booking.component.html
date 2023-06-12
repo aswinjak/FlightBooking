@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+  <body class="flex-body">
+    <div class="flight-ticket-card" *ngFor="let i of flightdetails; index as k" >
+      <div class="flight-from-to">
+        <h1>{{i.source}}</h1>
+        <h1><></h1>
+        <h1>{{i.destination}}</h1>
+      </div>
+      <table style="width: 100%;text-align: center">
+        <tbody>
+          <tr>
+            <th>{{i.flightname}}</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>INR</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>{{i.date}}</td>
+            <td>{{i.time}}</td>
+            <td>{{i.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="ticket-details">
+        <div>
+          Economy seat <input type="number" name="econoySeat" value="{{i.seat}}"/>
+          
+        </div>
+
+        <button class="book-btn" (click)="book(k)" value="{{k}}">Book</button>
+      </div>
+    </div>
+  </body>
+
+
